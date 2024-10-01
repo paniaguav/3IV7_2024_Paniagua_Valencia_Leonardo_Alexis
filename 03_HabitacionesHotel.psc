@@ -23,13 +23,13 @@ Algoritmo HabitacionesHotel_03
 		Escribir "1. Registrar Reserva"
 		Escribir "2. Cancelar Reserva"
 		Escribir "3. Consultar Disponibilidad"
-		Escribir "4. Gestión de Ocupación"
+		Escribir "4. GestiÃ³n de OcupaciÃ³n"
 		Escribir "5. Finalizar"
 		Leer opcion
 		
 		Segun opcion Hacer
 			1:
-				Escribir "Elija un número de habitación (1 a 10):"
+				Escribir "Elija un nÃºmero de habitaciÃ³n (1 a 10):"
 				Leer reserva_num
 				Si reserva_num >= 1 Y reserva_num <= 10 Entonces
 					Si lista_habitaciones[reserva_num] = 0 Entonces
@@ -40,48 +40,48 @@ Algoritmo HabitacionesHotel_03
 						lista_habitaciones[reserva_num] = 1
 						fechas_salida[reserva_num] = fecha_salida
 						ocupadas = ocupadas + 1
-						Escribir "Reserva para habitación ", reserva_num, " exitosa desde ", fecha_entrada, " hasta ", fecha_salida, "."
+						Escribir "Reserva para habitaciÃ³n ", reserva_num, " exitosa desde ", fecha_entrada, " hasta ", fecha_salida, "."
 					Sino
-						Escribir "La habitación ", reserva_num, " ya está ocupada."
+						Escribir "La habitaciÃ³n ", reserva_num, " ya estÃ¡ ocupada."
 					Fin Si
 				Sino
-					Escribir "Número de habitación inválido. Debe ser entre 1 y 10."
+					Escribir "NÃºmero de habitaciÃ³n invÃ¡lido. Debe ser entre 1 y 10."
 				Fin Si
 				
 			2:
-				Escribir "Ingrese el número de reserva a cancelar (1 a 10):"
+				Escribir "Ingrese el nÃºmero de reserva a cancelar (1 a 10):"
 				Leer reserva_num
 				Si reserva_num >= 1 Y reserva_num <= 10 Entonces
 					Si lista_habitaciones[reserva_num] = 1 Entonces
 						lista_habitaciones[reserva_num] = 0
 						fechas_salida[reserva_num] = 0
 						ocupadas = ocupadas - 1
-						Escribir "Reserva para habitación ", reserva_num, " cancelada."
+						Escribir "Reserva para habitaciÃ³n ", reserva_num, " cancelada."
 					Sino
-						Escribir "La reserva no existe para la habitación ", reserva_num, "."
+						Escribir "La reserva no existe para la habitaciÃ³n ", reserva_num, "."
 					Fin Si
 				Sino
-					Escribir "Número de habitación inválido. Debe ser entre 1 y 10."
+					Escribir "NÃºmero de habitaciÃ³n invÃ¡lido. Debe ser entre 1 y 10."
 				Fin Si
 				
 			3:
 				Escribir "Habitaciones disponibles y ocupadas:"
 				Para contador Desde 1 Hasta 10 Hacer
 					Si lista_habitaciones[contador] = 0 Entonces
-						Escribir "Habitación ", contador, " está disponible."
+						Escribir "HabitaciÃ³n ", contador, " estÃ¡ disponible."
 					Sino
-						Escribir "Habitación ", contador, " está ocupada hasta ", fechas_salida[contador], "."
+						Escribir "HabitaciÃ³n ", contador, " estÃ¡ ocupada hasta ", fechas_salida[contador], "."
 					Fin Si
 				Fin Para
 				
 			4:
-				Escribir "Porcentaje de ocupación del hotel: ", (ocupadas * 100) / habitaciones, "%"
+				Escribir "Porcentaje de ocupaciÃ³n del hotel: ", (ocupadas * 100) / habitaciones, "%"
 				
 			5:
 				Escribir "Finalizando el programa."
 				
 			De Otro Modo:
-				Escribir "Opción inválida, por favor intente de nuevo."
+				Escribir "OpciÃ³n invÃ¡lida, por favor intente de nuevo."
 		Fin Segun
 Hasta que opcion = 5
 
