@@ -12,7 +12,7 @@ Algoritmo ecuaciones_cuadraticas
 	discriminante <- b^2 - 4*a*c
 	
     Si discriminante < 0 Entonces
-        Escribir "La ecuación no tiene soluciones reales."
+        Escribir "La ecuaciÃ³n no tiene soluciones reales."
     Sino
         x1 <- (-b + raiz(discriminante)) / (2*a)
         x2 <- (-b - raiz(discriminante)) / (2*a)
