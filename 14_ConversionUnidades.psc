@@ -3,10 +3,10 @@ Algoritmo ConversionUnidades
 	Escribir "Ingrese a que unidad desea convertir"
 	
 	Mientras opcion <> 5 Hacer
-		Escribir "Seleccione una opción:"
+		Escribir "Seleccione una opciÃ³n:"
 		Escribir "1. Pulgadas"
 		Escribir "2. Yardas"
-		Escribir "3. Centímetros"
+		Escribir "3. CentÃ­metros"
 		Escribir "4. Metros"
 		Escribir "5. Salir"
 		Leer opcion
@@ -26,7 +26,7 @@ Algoritmo ConversionUnidades
 				Escribir "Ingrese la cantidad que desea convertir: "
 				leer n
 				resultado <- n * 30.48 
-				Escribir " ", n, " pies son: ", resultado, " centímetros"
+				Escribir " ", n, " pies son: ", resultado, " centÃ­metros"
 			caso 4: 
 				Escribir "Ingrese la cantidad que desea convertir: "
 				leer n
@@ -35,7 +35,7 @@ Algoritmo ConversionUnidades
 			caso 5:
                 Escribir "Saliendo..."
             De Otro Modo:
-                Escribir "Opción no válida."
+                Escribir "OpciÃ³n no vÃ¡lida."
 		FinSegun
 	FinMientras
 FinAlgoritmo
