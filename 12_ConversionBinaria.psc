@@ -6,7 +6,7 @@ Algoritmo ConversionBinaria
 	//el binario lo tengo que concatenar (unir)
 	binario = " "
 	
-	Escribir "Ingresa el número que deseas convertir"
+	Escribir "Ingresa el nÃºmero que deseas convertir"
 	leer num 
 	
 	si num > 0 Entonces
@@ -25,7 +25,7 @@ Algoritmo ConversionBinaria
 	si binario = " " Entonces
 		binario = "0"
 	FinSi
-	Escribir "El número binario es: ", binario
+	Escribir "El nÃºmero binario es: ", binario
 FinSi
 
 FinAlgoritmo
