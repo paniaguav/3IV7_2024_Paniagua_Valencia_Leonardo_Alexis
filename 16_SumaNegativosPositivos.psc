@@ -4,7 +4,7 @@ Algoritmo suma_de_numeros
 	definir n Como Entero
 	Definir suma Como Entero
 	
-	Escribir "Realiza la suma de n números. "
+	Escribir "Realiza la suma de n nÃºmeros. "
 	Leer limite
 	
 	Para i <- 1 Hasta limite Con Paso 1 Hacer
