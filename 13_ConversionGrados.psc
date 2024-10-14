@@ -1,7 +1,7 @@
 //Ejercicio 4.
 Algoritmo ConversionGrados
 	Mientras opcion <> 4 Hacer
-		Escribir "Seleccione a qué unidad de grados quiere pasar:"
+		Escribir "Seleccione a quÃ© unidad de grados quiere pasar:"
 		Escribir "1. Celsius"
 		Escribir "2. Kelvine"
 		Escribir "3. Rankine"
@@ -10,14 +10,14 @@ Algoritmo ConversionGrados
 		
 		segun opcion hacer
 			caso 1: 
-				Escribir "Ingrese la cantidad de grados fahrenheit (°F): "
+				Escribir "Ingrese la cantidad de grados fahrenheit (Â°F): "
 				leer n
 				res <- n - 32
 				res1 <- res * 5
 				res2 <- res1 / 9 
-				Escribir "", n, " grados fahrenheit son: ", res2, " grados celcius (°C)."
+				Escribir "", n, " grados fahrenheit son: ", res2, " grados celcius (Â°C)."
 			caso 2: 
-				Escribir "Ingrese la cantidad de grados fahrenheit (°F): "
+				Escribir "Ingrese la cantidad de grados fahrenheit (Â°F): "
 				leer n
 				res <- n - 32
 				res1 <- res * 5
@@ -25,14 +25,14 @@ Algoritmo ConversionGrados
 				res3 <- res2 + 273.15
 				Escribir "", n, " grados fahrenheit son: ", res3, " grados Kelvin (K)."
 			Caso 3: 
-				Escribir "Ingrese la cantidad de grados fahrenheit (°F): "
+				Escribir "Ingrese la cantidad de grados fahrenheit (Â°F): "
 				leer n
 				res <- n + 459.67
-				Escribir "", n, " grados fahrenheit son: ", res, " grados rankine (°R)."
+				Escribir "", n, " grados fahrenheit son: ", res, " grados rankine (Â°R)."
 			Caso 4: 
 				Escribir "Saliendo..."
 			De Otro Modo:
-				Escribir "Opción no válida"
+				Escribir "OpciÃ³n no vÃ¡lida"
 		FinSegun
 	FinMientras
 FinAlgoritmo
