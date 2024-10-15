@@ -23,7 +23,11 @@ Algoritmo ConversionGrados
 				res1 <- res * 5
 				res2 <- res1 / 9 
 				res3 <- res2 + 273.15
-				Escribir "", n, " grados fahrenheit son: ", res3, " grados Kelvin (K)."
+				si res3 < 0 entonces
+					escribir "No hay negativos en los grados Kelvin. Ingrese de nuevo un número válido. "
+					sino 
+					Escribir "", n, " grados fahrenheit son: ", res3, " grados Kelvin (K)."
+				finsi 
 			Caso 3: 
 				Escribir "Ingrese la cantidad de grados fahrenheit (°F): "
 				leer n
