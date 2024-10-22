@@ -25,7 +25,7 @@ def main():
         
         elif opcion == '3':
             print("Saliendo del programa...")
-            break
+            break #esto hace que el programa acabe aqui, o sea k sale del bucle
         
         else:
             print("Opción no válida. Por favor, intenta de nuevo.")
@@ -33,7 +33,7 @@ def main():
         seguir = input("¿Quieres realizar otra conversión? (s/n): ")
         if seguir.lower() != 's':
             print("Saliendo del programa...")
-            break
+            break # Funciona como el segun del pseint, segun s o n sale o sigue con el bukle
 
 if __name__ == "__main__":
     main()
